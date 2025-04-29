@@ -10,4 +10,5 @@ public class SampleWebApplication {
 		SpringApplication.run(SampleWebApplication.class, args);
 	}
 
+
 }
