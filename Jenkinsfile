@@ -8,12 +8,6 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repo') {
-            steps {
-                git 'https://github.com/blackhathckr/cicd.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh 'chmod +x gradlew'
