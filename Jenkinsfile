@@ -20,20 +20,6 @@ pipeline {
                 sh './gradlew clean build'
             }
         }
-
-        stage('Test') {
-            steps {
-                sh './gradlew test'
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                // This is optional depending on your project
-                // You can replace this with a `scp`, `docker build`, or `java -jar build/libs/*.jar`
-                sh 'java -jar build/libs/*.jar &'
-            }
-        }
     }
 
     post {
